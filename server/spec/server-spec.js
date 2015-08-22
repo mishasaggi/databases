@@ -66,7 +66,7 @@ describe("Persistent Node Chat Server", function() {
 
   it("Should output all messages from the DB", function(done) {
     // Let's insert a message into the db
-    // Mon: Insert to multiple tables in one query string?
+    // M: Insert to multiple tables in one query string?
     // Change the text to body and roomname to name - uses a join
 
        var queryString = "INSERT INTO rooms name value ('main'); 
@@ -75,7 +75,7 @@ describe("Persistent Node Chat Server", function() {
                           (SELECT id FROM users WHERE name = 'Val'),
                           (SELECT id FROM rooms WHERE name = 'main'))";
 
-       var queryArgs = []; //Mon: remove values and put them as args later
+       var queryArgs = []; //M: remove values and put them as args later
 
     // TODO - The exact query string and query args to use
     // here depend on the schema you design, so I'll leave
