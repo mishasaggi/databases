@@ -1,4 +1,4 @@
-/* You'll need to have MySQL running and your Node server running
+ /* You'll need to have MySQL running and your Node server running
  * for these tests to pass. */
 
 var mysql = require('mysql');

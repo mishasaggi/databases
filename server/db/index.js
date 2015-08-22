@@ -11,13 +11,16 @@ var dbConnection = mysql.createConnection({
   database : 'chat'
 });
 
-dbConnection.connect(function(err){
-  if(err) {
-    console.error('error connecting:' err.stack); //check if this is via inbuild error handling 
-  }
+dbConnection.connect();
 
-  console.log('connected as id' + connection.threadId); // check if this is also included in node module
+//error handling for connect in built or not?
+// function(err){
+//   if(err) {
+//     console.error('error connecting:' err.stack); //check if this is via inbuild error handling 
+//   }
 
-});
+//   console.log('connected as id' + connection.threadId); // check if this is also included in node module
+
+// }
 
 
