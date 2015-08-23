@@ -8,7 +8,7 @@ USE chat;
 
  CREATE TABLE users (
   id INT NOT NULL AUTO_INCREMENT,
-  name VARCHAR(30) NOT NULL,
+  name VARCHAR(30) NOT NULL UNIQUE,
   password VARCHAR(10),
   PRIMARY KEY (id));
 
@@ -17,7 +17,7 @@ USE chat;
 
 CREATE TABLE rooms (
   id INT NOT NULL AUTO_INCREMENT,
-  name VARCHAR(20) NOT NULL,
+  name VARCHAR(20) NOT NULL UNIQUE,
   PRIMARY KEY (id));
 
 
